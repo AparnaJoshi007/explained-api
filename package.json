@@ -4,8 +4,8 @@
   "description": "An API layer for explained-backend",
   "main": "functions/server.js",
   "scripts": {
-    "build": "netlify-lambda build express",
-    "start": "nodemon server-local.js",
+    "build": "netlify-lambda build src",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
