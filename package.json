@@ -2,9 +2,10 @@
   "name": "explained-api",
   "version": "1.0.0",
   "description": "An API layer for explained-backend",
-  "main": "index.js",
+  "main": "functions/server.js",
   "scripts": {
-    "start": "npx nodemon --exec npx babel-node index.js",
+    "build": "netlify-lambda build express",
+    "start": "nodemon server-local.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +24,8 @@
     "@babel/preset-env": "^7.10.2",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "nodemon": "^2.0.4"
+    "netlify-lambda": "^1.6.3",
+    "nodemon": "^2.0.4",
+    "serverless-http": "^2.5.0"
   }
 }
